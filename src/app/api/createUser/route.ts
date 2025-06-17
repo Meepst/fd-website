@@ -8,7 +8,7 @@ const prisma = new PrismaClient();
 export async function POST(req: NextRequest){
     try{
         const body = await req.json();
-        const {username, email, password} = body
+        const {username, email, password} = body;
 
         const user = await prisma.user.create({
             data: {username, email, password}

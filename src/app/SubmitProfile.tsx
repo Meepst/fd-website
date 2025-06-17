@@ -25,20 +25,7 @@ export const SubmitProfile: React.FC=()=>{
             setError('something went wrong with ouid');
             setOuid(null);
         }
-        const name = 'johhnny32';
-        const email = 'iwant@gmail.com';
-        const password = 'jim32';
-        const res1 = await fetch('api/createUser', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                username: name,
-                email: email,
-                password: password
-            }),
-        });
+    
     };
 
     return(
